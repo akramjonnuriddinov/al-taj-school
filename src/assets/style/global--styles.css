@@ -78,6 +78,8 @@ nav {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #E8D8E8 transparent;
 }
 
 .border {
@@ -119,6 +121,7 @@ main {
   overflow: hidden;
   margin: 0 auto;
   max-width: 500px;
+  /* max-width: 700px; */
   height: 100vh;
   background: rgba(238, 238, 238, 0.541);
   background-blend-mode: overlay;
@@ -126,9 +129,12 @@ main {
 }
 
 #navbar {
-  background-image: url("https://play-lh.googleusercontent.com/QZtYzkYv_QVm6Ju7LVhwGYaCs5t4usxaYNb5g-TmQQolyEdj9kSB0JN2ILlAmbdZ8MM");
+  /* background-image: url("https://play-lh.googleusercontent.com/QZtYzkYv_QVm6Ju7LVhwGYaCs5t4usxaYNb5g-TmQQolyEdj9kS B0JN2ILlAmbdZ8MM"); */
   background-size: contain;
   background-position: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 nav {
@@ -200,12 +206,21 @@ nav a.router-link-exact-active {
   align-items: center;
   justify-content: center;
   /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3); */
-  box-shadow: 0 2px 12px rgba(128, 0, 128, 0.3);
+  /* box-shadow: 0 2px 12px rgba(128, 0, 128, 0.3); */
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
-  color: gray;
+  /* color: gray; */
+  color: #4202af;
+  font-size: 16px;
+  font-weight: 700;
   cursor: pointer;
   height: 140px !important;
   border: none !important;
+}
+
+.card:hover {
+  color: #333;
 }
 
 button.card:active {

@@ -1,26 +1,29 @@
 <template>
   <nav>
-    <div class="logo">
-      <img
-        src="http://bbb.barbeque.uz/public/uploads/settings/logo.png"
-        alt="logo"
-      />
-      <!-- style="width: 52px" -->
-    </div>
+    <img
+      src="http://bbb.barbeque.uz/public/uploads/settings/logo.png"
+      alt="logo"
+      class="site-logo"
+    />
+    <!-- style="width: 52px" -->
+    <!-- <div class="logo">
+    </div> -->
     <div class="accaount-image">
       <!-- <img src="../assets/logo.png" alt="logo" style="width: 32px" /> -->
       <img
-        src="https://cdn3d.iconscout.com/3d/premium/thumb/message-delivered-4737169-3934374.png"
+        src="../assets/icon-img/message-icon.svg"
         alt="chat"
         class="mx-2"
         style="width: 40px; cursor: pointer;"
         @click="$router.push('/chat')"
       />
+      <!-- <MessageIcon @click="$router.push('/chat')" class="mx-2 message-icon" /> -->
       <img
-        src="https://cdn3d.iconscout.com/3d/premium/thumb/right-arrow-button-5588633-4688182.png"
+        src="../assets/icon-img/logout-icon.svg"
         style="width: 45px; border-radius: 50%"
         v-b-modal.modal-danger
       />
+      <!-- <LogoutIcon class="logout-icon" /> -->
     </div>
     <LogOutModal />
   </nav>
@@ -28,10 +31,12 @@
 
 <script>
 import LogOutModal from "./LogOutModal.vue";
+import MessageIcon from "./icons/MessageIcon.vue";
+import LogoutIcon from "./icons/LogoutIcon.vue"
 export default {
   name: "NavbarMain",
   components: {
-    LogOutModal,
+    LogOutModal, MessageIcon, LogoutIcon
   },
 };
 </script>
@@ -46,8 +51,16 @@ nav {
 
 nav .logo img {
   /* background: rgba(252, 213, 213, 0.37); */
-  background: #fff;
-  backdrop-filter: blur(2px);
-  border-radius: 8px;
+  width: 140px;
+}
+
+.message-icon {
+  width: 40px;
+  color: #EEB332;
+}
+
+.logout-icon {
+  width: 40px;
+  color: #4202af;
 }
 </style>
