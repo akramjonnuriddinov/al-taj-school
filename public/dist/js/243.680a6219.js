@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkaltaj"]=self["webpackChunkaltaj"]||[]).push([[243],{4243:function(n,u,e){e.r(u),e.d(u,{default:function(){return s}});var l=function(){var n=this,u=n._self._c;return u("div",[n._v("fee")])},t=[],a=e(1001),r={},f=(0,a.Z)(r,l,t,!1,null,null,null),s=f.exports}}]);
+//# sourceMappingURL=243.680a6219.js.map
